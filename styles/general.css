@@ -1,0 +1,61 @@
+body {
+	background: linear-gradient(to left, #000, #210 30%, #210 70%, #000);
+}
+
+header {
+	.logo {
+		position: fixed;
+		padding: 1em;
+		background: #fff;
+	}
+	nav {
+		ul {
+			list-style: none;
+			display: flex;
+			justify-content: flex-end;
+			li {
+				transition: transform 200ms ease-in-out allow-discrete;
+				transform: translate(0,0);
+				width: 15vw;
+				rotate: -10deg;
+				margin: -8vw -2vw -2vw 0;
+			}
+			li:hover, li:focus-within {
+				transition: transform 100ms ease-in-out allow-discrete;
+				transform: translate(0,5vw);
+			}
+			li:nth-child(0) {
+				z-index: 3;
+			}
+			li:nth-child(1) {
+				z-index: 3;
+			}
+			li:nth-child(2) {
+				z-index: 2;
+			}
+			li:nth-child(3) {
+				z-index: 1;
+			}
+			li:nth-child(4) { 
+				/* credits */
+				background: #fff;
+				text-align: center;
+				padding: 10vw 0 0;
+				width: 10vw;
+				rotate: 0deg;		
+				font-size: 22px;
+			}
+		}
+	}
+   
+}
+
+main {
+	margin: 1em auto 0;
+	width: 66.667vw;
+	min-height: 80vh;
+	background: url('/images/corkboard.jpg') repeat;
+	border: min(2vw,24px) solid;
+	border-image: url('/images/wood.png') 32;
+	/* border-image-slice: ; */
+}
