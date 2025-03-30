@@ -1,0 +1,24 @@
+#tutorial-img {
+	display: inline-block;
+	margin: 0em auto 2em;
+	width: 90%;
+	border: 0.2vw solid #edd;
+}
+
+.pin-1 {
+	flex: 2 3;
+	.paper {
+		transform-origin: center 5%;
+		transform: rotate(0.75deg);
+	}
+	
+}
+.pin-2 {
+	flex: 3 2;
+	.paper {
+		transform-origin: center 5%;
+		/* transform: rotate(.5deg); */
+		background: url('/images/lined-paper.png') repeat-y cover;
+	}
+	
+}
