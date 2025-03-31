@@ -32,8 +32,148 @@
 			<li><a href="\credits.html">Credits</a></li>
 		</ul>
 	</div>
-	<main>
-	</main>
+	 <main>
+    <div class="layout">
+    <div class="featured">
+        <div class="wrap">
+        <h1>Animation Showcase</h1>
+    </div>
+    </div>
+    <div class="terms">
+            <h1>Animation terms</h1>
+            <div class="termwrapper" id="sect1">
+                <div class="icon">
+                     <img id="FrameExamples" src="frametypes/Keyframe-peter-pan.jpg" alt="storyboard, peter pan 1953">
+                </div>
+                <div class="desc"> 
+                    <h2>Keyframes</h2>
+                    <p>keyframes are the frames animators draw first, they establish the basic movment of the animation and help keep everything consistent</p>
+                </div>
+            </div>
+            <div class="termwrapper" id="sect2">
+                <div class="icon">
+                  <img id="FrameExamples" src="frametypes/in-betweens.jpg" alt="storyboard,lilo and stitch 2002">
+                </div>
+                <div class="desc">
+                    <h2>In-betweens</h2>
+                    <p>in betweens are the frames drawn in between key frames to complete the full animation. the keyframes are used as a base and the inbetweens are drawn in to complete the illusion of movment</p>
+                </div>
+            </div>
+            <div class="termwrapper" id="sect3">
+                <div class="icon">
+                     <img id="FrameExamples" src="frametypes/Smear-Frames.jpg" alt="smear frame from bugs bunny">
+                </div>
+                <div class="desc">
+                    <h2>Smear frames</h2>
+                    <p>these are frames in which the character is distorted to better create the illusion of movment. these frames are only meant to be seen for a second and are usually employed when a charcater is moving very fast</p>
+                </div>
+            </div>
+            <div class="termwrapper" id="sect4">
+                <div class="icon" style="max-height: 130px;">
+                     <img id="FrameExamples" src="frametypes/impact-frame.jpg" alt="impact frame from dragonball z">
+                </div>
+                <div class="desc">
+                    <h2>Impact frames</h2>
+                    <p> impact frames are frames that happen directly after an impact offten inverting the colour pallete or making everything monochrome. these frames exist to create a sense of punch to a characters actions and are common in fight animation</p>
+                </div>
+            </div>
+    </div>
+    <div class="info">
+        <div class="infowrapper">
+            <h1 id="maintitle"> Animating materials </h1>
+                <div class="buttons">
+                    <button id="ex" onclick="setAnimation(1)">Stone</button>
+                    <button id="ex" onclick="setAnimation(2)">Wood</button>
+                    <button id="ex" onclick="setAnimation(3)">Plastic</button>
+                    <button id="ex" onclick="setAnimation(4)">Rubber</button>
+                </div>
+            <div class="frame">
+                <div class="track">
+                    <div id="animex" class="null"></div>
+                </div>
+            </div>
+            <div class="infobox">
+                <div class="infoframe" style="font-size:12px;">
+                    <h1>Tips</h1>
+                    <div id="vis1" class="stretch"></div>
+                    <div id="box1"> <h2>Stretch Frames</h2><br><p>stretch frames add emphasis to movment, for example if you where moving very fast</p></div>
+                    <div id="vis2" class="squash"></div>
+                    <div id="box2"><h2>Squash Frames</h2><p>squash frames emphasive impact, they also offten give the object a rubbery quality</p></div>
+                    <div id="vis3" class="reg"> </div>
+                    <div id="box3"><h2>Rebound</h2><br><p>rebound height is important to keep track of because its a visual indicator of weight. a heavy hard object wont rebound much and will maintain a static shape while doing it. meanwhile a rubber object will squash and the rebound very high</p></div>
+                </div>
+            </div>
+            <div class="infobox2">
+                <h1>Texture and weight</h1>
+                <p>Every material is different and thus every material moves differently aswell. qualities like weight, density and structure are important to keep in mind when animating. this ensure your drawings not only look like an object but move like it too</p>
+                <p>Heres some helpful tips on animating differeent materials</p>
+            </div>
+        </div>
+    </div>
+    <div class="case" id="pinned">
+    <div class="title"> <h1 id="maintitle">Storyboards</h1></div>
+    <div class="filmwrap">
+    <div class="case1">
+        <div class="imageset">
+            <div class="title"><h2>Story Board</h2></div>
+            <div class="frame">
+                <img id="1currentslide" src="slides/keyframes/frame1.png">
+            </div>
+            <div id="switch" class="left">
+                <button  onclick="switchImg(slide1,-1, 0,)"><<</button>
+            </div>
+            <div id="switch" class="right">
+                <button onclick="switchImg(slide1,1, 1,)">>></button>
+            </div>
+        </div>
+    </div>
+    <div class="case2">
+        <div class="imageset">
+            <div class="title"><h2>Full Animation</h2></div>
+            <div class="frame">
+                <img id="2currentslide" src="slides/colouredframes/frame1.png">
+            </div>
+            <div id="switch" class="left">
+                <button  onclick="switchImg(slide2,-1, 0,)"><<</button>
+            </div>
+            <div id="switch" class="right">
+                <button onclick="switchImg(slide2,1, 1,)">>></button>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="case3">
+        <div class="vidwrap">
+        <video id="vidID" controls>
+            <source src="slides/symphony_1942.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video>
+          <div class="title">
+            <a href="https://www.youtube.com/watch?v=xyDge2ddELA">see full video</a>
+          </div>
+          </div>
+    </div>
+    </div>
+    <div class="links">
+        <div class="title"><h1>Tutorials and resources</h1></div>
+        <div class="linkbox">
+        <div  class="baselink">
+            <h2>character animation</h2>
+            <a href="https://www.youtube.com/watch?v=ynBENQJBQbE">See Video</a>
+        </div>
+        <div  class="baselink">
+            <h2>Lip synching</h2>
+            <a href="https://www.youtube.com/watch?v=6l3mVMqYJ4g">See Video</a>
+        </div>
+        <div  class="baselink">
+            <h2>animation guide</h2>
+            <a href="https://www.youtube.com/watch?v=6VQl2vb_bec">See Video</a>
+        </div>
+    </div>
+    <div class="thumbnails"></div>
+    </div>
+    </div>
+    </main>
 	<footer>
 
 	</footer>
