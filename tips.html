@@ -1,50 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/reset.css">
-    <link rel="stylesheet" href="/styles/general.css">
-    <link rel="stylesheet" href="/styles/tips.css">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <title></title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/styles/reset.css">
+	<link rel="stylesheet" href="/styles/general.css">
+	<link rel="stylesheet" href="/styles/tips.css">
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+	<title></title>
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="index.html"><img src="images/arty-logo.svg" alt="Logo" class="logo"></a>
-            <ul>
-                <li><a href="\showcase.html"><img src="/images/nav-showcase.png" alt="Art World"></a></li>
-                <li><a href="\tips.html"><img src="/images/nav-tips.png" alt="Tips & Resources"></a></li>
-                <li><a href="\featured.html"><img src="/images/nav-featured.png" alt="Featured Artist"></a></li>
+	<header>
+		<nav>
+			<a href="index.html"><img src="images/arty-logo.svg" alt="Logo" class="logo"></a>
+			<ul>
+				<li><a href="\showcase.html"><img src="/images/nav-showcase.png" alt="Art World"></a></li>
+				<li><a href="\tips.html"><img src="/images/nav-tips.png" alt="Tips & Resources"></a></li>
+				<li><a href="\featured.html"><img src="/images/nav-featured.png" alt="Featured Artist"></a></li>
 				<li><a href="\credits.html">Credits</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <div class="pin-1">
-            <div class="paper">
-                <img class="pin-img" src="/images/pushpin.png">
-                <img id="tutorial-img" src="/images/tips/perspective-4.png">
-            </div>
-        </div>
-        <div class="pin-2">
-            <div class="paper">
-                <h1><img class="pin-img" src="/images/pushpin.png">Perspective Trick<img class="pin-img" src="/images/pushpin.png"></h1><br>
-                <p>1. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                </p>
-                <p>2. when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, 
-                </p>
-                <p>3. remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-                </p>
-                <p>4. and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                </p>
-            </div>
-        </div>
+				<li class="mobile-nav-button" onclick="show_nav(true);"><img src="/images/mobile-nav-button.png"></li>
+			</ul>
+			
+		</nav>
+	</header>
+	<div id="mobile-nav">
+		<a href="index.html"><img src="images/arty-logo.svg" alt="Logo" class="logo"></a><div class="mobile-nav-button" onclick="show_nav(false);"><img  src="/images/mobile-nav-exit.png"></div>
+		<ul>
+			<li><a href="\showcase.html"><img src="/images/nav-showcase.png" alt="Art World"></a></li>
+			<li><a href="\tips.html"><img src="/images/nav-tips.png" alt="Tips & Resources"></a></li>
+			<li><a href="\featured.html"><img src="/images/nav-featured.png" alt="Featured Artist"></a></li>
+			<li><a href="\credits.html">Credits</a></li>
+		</ul>
+	</div>
+	<main>
+		<div class="pin-1">
+			<div class="paper">
+				<img class="pin-img" src="/images/pushpin.png"><br>
+				<img id="tutorial-img" src="/images/tips/perspective-1.png">
+			</div>
+		</div>
+		<div class="pin-2">
+			<div id="tutorial" class="paper">
+				<h1><img class="pin-img" src="/images/pushpin.png">Perspective Trick<img class="pin-img" src="/images/pushpin.png"></h1><br>
+				<p tabindex=0 onclick="gallery(1);">
+				1. Here's a shortcut to drawing weird exaggerated perspectives. First, draw a VERY quick doodle of what you want to draw in a very simple straight, head-on perspective. Just enough to be able to tell where everything is and what shape it is.
+				</p>
+				<p tabindex=0 onclick="gallery(2);">
+				2. Next, draw a box showing the perspective you wish to draw. Basically, the box that would fit around the thing you're drawing, though it doesnt really have to be that close at all.
+				</p>
+				<p tabindex=0 onclick="gallery(3);">
+				3. Then, use your drawing program's "Free Transform" tool to fit the original doodle you made to this box, making whatever adjustments you want to make the perspective look nicer.
+				</p>
+				<p tabindex=0 onclick="gallery(4);">
+				4. Finally, draw your actual proper sketch over this warped doodle, making sure to give the shapes their proper 3D volume, now that they're all flat. Everything will be in a pretty nice place without all that much pain and you can go on to putting in more details and finishing the drawing.
+				</p>
+			</div>
+		</div>
+		<div class="pin-3">
+			<div class="paper">
+				<img class="pin-img" src="/images/pushpin.png"><img class="pin-img" src="/images/pushpin.png">
+				<a href="https://fenrirlives.tumblr.com/post/153961779404/tips-on-drawing-hands-tutorial-hope-this-is"><h1>Tips On Drawing Hands</h1></a>
+				<p><a class="resource-img" href="https://fenrirlives.tumblr.com/post/153961779404/tips-on-drawing-hands-tutorial-hope-this-is"><img src="/images/tips/hand-tips.png"></a>By @fenrirlives on Tumblr, here is an extensive post with advice on the anatomy of the human hand and how to have an easier time drawing it. Amazing for the many artists out there who struggles drawing hands, this guide contains many useful tips covering many aspects of the hand and information on specific poses, with a ton of diagrams to look at too.</p>
+			</div>
+		</div>
+		<div class="pin-4">
+			<div class="paper">
+				<img class="pin-img" src="/images/pushpin.png"><br>
+				<h1><a href="https://assets.clip-studio.com/en-us/detail?id=1800143">Erase Along Edge</a></h1><br>
+				<a href="https://assets.clip-studio.com/en-us/detail?id=1800143"><img class="resource-img" src="/images/tips/eraser.jpg"></a>
+				<p>A useful eraser tool preset for clip studio paint that blocks the eraser from crossing lines on reference layers.</p>
+			</div>
+		</div>
+		<div class="pin-5">
+			<div class="paper">
+				<img class="pin-img" src="/images/pushpin.png"><br>
+				<h1><a href="https://saint11.art/blog/pixel-art-tutorials/">Pixel Art Tutorials</a></h1><br>
+				<a href="https://saint11.art/blog/pixel-art-tutorials/"><img class="resource-img pixelated" src="/images/tips/pixelart.gif"></a>
+				<p>A huge series of tutorials on pixel art by <a href="https://bsky.app/profile/saint11.art">Pedro Medeiros</a>, pixel artist on Celeste, TowerFall, and more. Covers a wide array of topics, and many of the tutorials are themselves animated. Very clear and very nice to look at.</p>
+			</div>
+		</div>
+		<div class="pin-6">
+			<div class="paper">
+				<img class="pin-img" src="/images/pushpin.png"><br>
+				<h1><a href="https://shingworks.tumblr.com/post/153954062953/writing-for-webcomics">Writing for Webcomics</a></h1><br>
+				<a href="https://shingworks.tumblr.com/post/153954062953/writing-for-webcomics"><img class="resource-img" src="/images/tips/writing.png"></a>
+				<p>Personal advice from <a href="https://www.shingworks.com/">shingworks</a>, someone with more than a decade of experience writing webcomics. A visual guide on the the philosophy on writing for a webcomic, some good tips, and how to get better practice. Consider making a webcomic if you've never tried it!</p>
+			</div>
+		</div>
+	</main>
+	<footer>
 
-    </main>
-    <footer>
-
-    </footer>
+	</footer>
+	<script src="/scripts/tips.js"></script>
 </body>
 </html>

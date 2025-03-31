@@ -1,24 +1,130 @@
 #tutorial-img {
 	display: inline-block;
 	margin: 0em auto 2em;
-	width: 90%;
+	width: 95%;
 	border: 0.2vw solid #edd;
 }
 
+#tutorial {
+	p {
+		transition: transform 200ms ease-in-out allow-discrete;
+		transition-property: transform, background-color;
+		transform: translate(0,0);
+		margin: .25em .5em .5em;
+		background: #6222;
+		border-radius: 15px;
+		padding: .7em;
+	}
+	p:hover, p:focus-within {
+		transform: translate(-1em,0);
+		cursor: pointer;
+		background-color: #8324;
+	}
+}
+
 .pin-1 {
-	flex: 2 3;
+	flex: 2 1 350px;
 	.paper {
 		transform-origin: center 5%;
 		transform: rotate(0.75deg);
 	}
-	
 }
+
 .pin-2 {
-	flex: 3 2;
+	flex: 4 1 400px;
 	.paper {
 		transform-origin: center 5%;
 		/* transform: rotate(.5deg); */
-		background: url('/images/lined-paper.png') repeat-y cover;
+		background: url('/images/lined-paper.png') repeat;
 	}
+	align-self: center;
+}
+
+.pin-3 {
+	flex: 10 0 100%;
+	/* text-align: center; */
+	.paper {
+		width: 90%;
+		margin: 0 5% 0;
+		padding: .5em;
+		height:fit-content;
+		/* transform-origin: center; */
+		transform: rotate(-1deg);
+		/* background: url('/images/lined-paper.png') repeat; */
+		.pin-img { position: relative; margin: -16px; }
+		.pin-img:nth-child(1) { float: left; }
+		.pin-img:nth-child(2) { float: right; }
+		p {
+			display: flex;
+			align-items: center;
+			vertical-align: middle;
+			.resource-img {
+				flex: 4 0 200px;
+				display: inline-block;
+				margin: 1em;
+				img {
+					width: 100%;
+					transition: transform 150ms ease-in-out allow-discrete;
+					
+				}
+				img:hover {
+					transform: scale(1.1);
+				}
+			}
+		}
+	}
+	align-self: center;
+}
+
+.pin-4, .pin-5, .pin-6 {
+	flex: 2 1 300px;
+	text-align: center;
+	.paper {
+		width: 100%;
+		height:fit-content;
+		transform-origin: center 5%;
+		transform: rotate(1.5deg);
+		background: url('/images/lined-paper.png') repeat;
+		.resource-img {
+			display: inline-block;
+			width: min(80%, 250px);
+			margin: 1em;
+			transition: transform 150ms ease-in-out allow-discrete;
+			
+		}
+		.resource-img:hover {
+			transform: scale(1.1);
+		}
+		p {
+			margin: 0em .5em;
+		}
+	}
+	align-self: center;
+}
+
+.pin-5 {
+	transform: rotate(-2deg);
+}
+.pin-6 {
+	transform: rotate(-3deg);
+}
+
+
+/* TABLET */
+@media (max-width: 961px) {
 	
+}
+
+/* PHONE */
+@media (max-width:520px) {
+	.pin-3 {
+		.paper {
+			width: 100%;
+			margin: 0;
+			p {
+				flex-flow: column;
+				padding: .5em;
+			}
+		}
+	}
 }
