@@ -1,0 +1,445 @@
+.layout{
+    align-self:center;
+    width: 100%;
+     height:2300px;
+   display: grid;
+   grid-template-areas:
+     "featured featured terms"
+     "info info info"
+     "case case case"
+     "links links links";
+   grid-template-columns: 3fr 3fr 3.5fr;
+   grid-template-rows: 5fr 3fr 3fr 2fr;
+   gap: 5px;
+   row-gap: 20px;
+}
+    .layout > div{
+        position: relative;
+    }
+    .layout .featured{
+        grid-area: featured;
+        display: flex;
+        padding: 30px;
+        background-image: var(--frame);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position-y: center;
+        flex-direction: column;
+        object-fit: cover;
+        border: solid rgb(0, 0, 0) 2px;
+        box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.514);
+    }
+    .featured .wrap{
+        overflow: hidden;
+        width:100%;
+        height:100%;
+        object-fit: contain;
+        align-self: center;
+        background-image: var(--poster);
+    }
+    .wrap h1{
+        font-size: 60px;
+        display:flex;
+        align-self: center;
+        margin:auto;
+        flex-direction: row;
+        justify-content: space-around;
+        height:fit-content;
+        background-image: var(--tape);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    .wrap img{
+        align-self: center;
+        object-fit: cover;
+        height:100%;
+    }
+    .layout .terms{
+        grid-area: terms;
+        display: grid;
+        grid-template-areas:
+        "title"
+        "sect1"
+        "sect2"
+        "sect3"
+        "sect4";
+        grid-template-rows: 2fr 3fr 3fr 3fr 3fr;
+    }
+        .terms div{
+        background-color: var(--Y1);
+    }
+
+    .layout .info{
+        grid-area: info;
+        object-fit: contain;
+        max-height: fit-content;
+        background-image: var(--paper);
+    }
+        .info .infowrapper{
+        height:fit-content;
+        display: grid;
+        grid-template-areas:
+        "title title title title"
+        "buttons frame infobox infobox2";
+        gap: 5px;
+        grid-template-columns:1fr 1fr 4fr 6fr;
+        grid-template-rows: 1fr 5fr;
+        }   
+    .layout .case{
+        grid-area: case;
+        display: grid;
+        grid-template-areas:
+        "title title title"
+        "filmwrap filmwrap case3";
+        grid-template-columns: 3fr 3fr 3fr;
+        grid-template-rows: 1fr 5fr;
+        background-image: var(--paper);
+    }
+    .layout .links{
+        grid-area: links;
+        display: flex;
+        flex-direction: column;
+        background-image: var(--paper)
+    }
+        .links div{
+        display:flex;
+        width:100%;}
+    .layout footer{
+        grid-area: footer;
+        display: flex;
+        background-image: var(--paper);
+    }
+
+
+    .terms p{
+        height: fit-content;
+        margin-bottom:0%;
+        margin-top:0%;
+        font-size: 13px;
+        margin-left:2px;
+    }
+    .terms h2{
+        align-self: flex-start;
+        margin-top: 0%;
+        margin-bottom: 0%;
+    }
+    .terms h1{
+        background-image: url("assets/tape-single.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-y: center;
+        grid-area: title;
+        padding:5px;
+        padding-left: 20%;
+    }
+    .terms .termwrapper{
+        width:100%;
+        height:100%;
+        max-height: 125px;
+        display: grid;
+        grid-template-areas:
+        "icon desc";
+        grid-template-columns: 1fr 4fr;
+        box-shadow: 5px 7px 5px rgba(0, 0, 0, 0.5);
+    }
+    .termwrapper .icon{
+        display: flex;
+        grid-area: icon;
+        height: 100%;
+        width:100%;
+        max-height: 120px;
+        max-width:130px;
+        overflow: hidden;
+        object-fit: cover;
+        justify-content: center;
+        min-width: 100px;
+    }
+    .termwrapper .desc{
+        grid-area: desc;
+    }
+    .terms .termwrapper#sect1{
+        grid-area: sect1;
+    }
+    .terms .termwrapper#sect2{
+        grid-area: sect2;
+    }
+    .terms .termwrapper#sect3{
+        grid-area: sect3;
+    }
+    .terms .termwrapper#sect4{
+        grid-area: sect4;
+    }
+
+
+    .info .infowrapper h1{
+        grid-area: title;
+    }
+    .info .infowrapper .buttons{
+        grid-area: buttons;
+        padding:5px;
+        display:flex;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+    .info .infowrapper .frame{
+        grid-area: frame;
+    }
+    .info .infowrapper .frame .track{
+        border: none;
+        display:flex;
+        width:100%;
+        height:75%;
+    }
+    .info .infowrapper .infobox{
+        display:flex;
+        grid-area: infobox;
+        width:100%;
+        height:100%;
+    }
+    .info .infowrapper .infobox2{
+        display:flex;
+        grid-area: infobox2;
+        flex-direction: column;
+        width:100%;
+        height:100%;
+    }
+
+
+
+
+    .infobox .infoframe{
+        background-color: white;
+        border: solid black 3px;
+        display:grid;
+        height:100%;
+        width:100%;
+        grid-template-areas: 
+        "title title"
+        "vis1 box1"
+        "vis2 box2"
+        "vis3 box3";
+        grid-template-rows: 1fr 3fr 3fr 3fr;
+        grid-template-columns: 1fr 3fr;
+        gap:5px;
+        row-gap:5px;
+    }
+    .infobox .infoframe h2{
+        display:flex;
+        margin:0px;
+    }
+    .infobox .infoframe p{
+        display:flex;
+        margin-top:0px;
+    }
+    .infobox .infoframe h1{
+        grid-area: title;
+        display:flex;
+        margin:0px;
+    }
+    #box1{
+        grid-area: box1;
+        display:flex;
+        flex-direction: column;
+    }
+    #box2{
+        grid-area: box2;
+        display:flex;
+        flex-direction:column;
+    }
+    #box3{
+        grid-area: box3;
+        display:flex;
+        flex-direction:column;
+    }
+    #vis1{
+        grid-area: vis1;
+        display:flex;
+        margin:auto;
+    }
+    #vis2{
+        grid-area: vis2;
+        display:flex;
+        margin:auto;
+    }
+    #vis3{
+        grid-area: vis3;
+        display:flex;
+        margin:auto;
+    }
+    .stretch{
+        height:80px;
+        width:50px;
+        border-radius: 50%;
+        background-color: aqua;
+    }
+    .squash{
+        height:50px;
+        width:80px;
+        border-radius: 50%;
+        background-color: aqua;
+    }
+    .reg{
+        height:80px;
+        width:80px;
+        border-radius: 50%;
+        background-color: aqua;
+    }
+    .small{
+        height:50px;
+        width:50px;
+        border-radius: 50%;
+        background-color: aqua;
+    }
+    
+
+    .case .title{
+        display: flex;
+        grid-area: title;
+        margin:0px;
+    }
+    .case .filmwrap{
+        grid-area: filmwrap;
+        display:flex;
+       object-fit: contain;
+       flex-direction:row;
+       padding-top:10px;
+       padding-bottom:0px;
+       padding-right:5px;
+       height:70%;
+       background-color: black;
+       border-top: dashed white 7px;
+       border-bottom: dashed white 7px;
+       outline: solid black 2px;
+       outline-offset: 0px;
+    }
+    .case .filmwrap .case1{
+        display: flex;
+        object-fit: contain;
+    }
+    .case .filmwrap .case2{
+        display: flex;
+        object-fit: contain;
+    }
+    .case .case3{
+        grid-area: case3;
+        display: flex;
+        justify-content: center;
+    }
+
+    .links .title{
+        display:flex;
+        width:100%;
+        height:fit-content;
+    }
+    .links .linkbox{
+    display:flex;
+    width:100%;
+    height: fit-content;
+    justify-content: space-around;
+    }
+    .baselink{
+        background-color: var(--Y1);
+        padding:20px;
+        display:flex;
+        width: fit-content;
+        flex-direction: column;
+        border: solid black 2px;
+        }
+
+
+    @media (max-width:1500px) and (min-width:701px){
+        .layout{
+        grid-template-areas:
+        "featured"
+        "terms"
+        "info"
+        "case"
+        "links";
+        grid-template-columns:3fr;
+        grid-template-rows: 5fr 2fr 3fr 3fr 2fr;
+        height:2800px;
+        }
+        
+        .info{
+           max-height: fit-content;
+            
+        }
+        .info .infowrapper{
+            grid-template-areas:
+            "title title"
+            "buttons buttons"
+            "frame infobox"
+            "infobox2 infobox2";
+            height:100%;
+            width:100%;
+            grid-template-columns: 1fr 5fr;
+            grid-template-rows: 1fr 1fr 4fr 3fr;
+        }
+        .info .infowrapper .buttons{
+            flex-direction: row;
+        }
+        .infowrapper .infoframe{
+            grid-template-columns: 1fr 5fr;
+        }
+    }
+
+
+/*tablet*/
+    @media (max-width: 700px) { 
+        .layout {
+          grid-template-areas:
+            "featured featured"
+            "terms terms"
+            "info info"
+            "case case"
+            "links links";
+          grid-template-columns: 3fr 3fr;
+          grid-template-rows: minmax(0, 4fr)  minmax(0, 6fr) minmax(0,9fr) minmax(0, 9fr) minmax(0, 3fr);
+            height: 3500px;
+        }
+        .layout .case{
+            grid-template-areas:
+            "filmwrap filmwrap"
+            "title title"
+            "case3 case3";
+            grid-template-columns: 3fr 3fr;
+            grid-template-rows: minmax(0,4fr) minmax(0,1fr) minmax(0,6fr);
+            row-gap: 10px;
+        }
+        .terms .termwrapper{
+            grid-template-columns: 2fr 4fr;
+        }
+        .info{
+            min-height: fit-content;
+            
+        }
+        .info .infowrapper{
+            grid-template-areas:
+            "title title"
+            "buttons buttons"
+            "frame infobox"
+            "infobox2 infobox2";
+            height:100%;
+            width:100%;
+            grid-template-columns: 1fr 5fr;
+            grid-template-rows: 1fr 1fr 4fr 4fr;
+            gap:5px;
+        }
+        .info .infowrapper .buttons{
+            flex-direction: row;
+        }
+        .infowrapper .infoframe{
+            grid-template-columns: 1fr 5fr;
+        }
+        .case3{
+            object-fit: contain;
+        }
+        .case .filmwrap{
+            height:100%;
+            padding-bottom:10px;
+            padding-top:0px;
+            
+        }
+    }
+
+    

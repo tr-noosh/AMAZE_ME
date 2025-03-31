@@ -1,0 +1,113 @@
+:root {
+    --R1: #C81D25;
+    --Y1: rgb(255, 244, 181);
+    --B1: #37515F;
+    --tape: url("assets/tape-single.png");
+    --paper: url("assets/paper texture.jpg");
+    --pin: url("assets/push-pin-icon-14.png");
+    --frame: url("assets/woodframe.png");
+	--poster: url("assets/poster.jpg")
+}
+
+h1{
+    font-family: "Lacquer", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+}
+h2{
+    font-family: "Covered By Your Grace", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}
+#pinned::after {
+    display: inline-block;
+    content: url(assets/push-pin-icon-14.png);
+    transform: scale(.17);
+    width: 100%;
+    height: 5px;
+    position: absolute;
+}
+.layout a:hover{
+   font-size: 30px;
+}
+.layout a:visited{
+color: rgb(141, 17, 17);
+}
+.layout a::before{
+    content:">>";
+    display: inline-block;
+    gap: 1px;
+}
+.layout a{
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    height:fit-content;
+}
+button{
+    background-color: #000000;
+    border: white;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+}
+button:hover{
+    background-color: white;
+    border:solid #000000 4px;
+    color: black;
+}
+button:active{
+    background-color: rgb(169, 170, 184);
+    border:solid #000000 4px;
+    color: black;
+}
+body{
+    background-image: url("assets/magazine-texture.jpg");
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+}
+main{
+    margin-right:20%;
+    margin-left:20%;
+    margin-top:0px;
+    margin-bottom:0px;
+    background-image: url("assets/corkboard-texture.jpg");
+    height:fit-content;
+}
+img#FrameExamples{
+    object-fit: contain;
+    height:100%;
+    max-height:130px;
+    align-self: center;
+}
+#maintitle{
+    font-size:30px;
+}
+button#ex{
+    width:100%;
+    height:100%;
+    margin-top:5px;
+}
+#animex{
+    width:85px;
+    height:85px;
+    border-radius: 50px;
+    display:flex;
+    position:relative;
+   top:100%;
+   background-color: #010001;
+    animation-duration: 2s;
+}
+@media (max-width:1500px) and (min-width:701px){
+    main{
+        margin-right:15%;
+        margin-left:15%;
+      }
+}
+@media (max-width: 900px) { 
+    main{
+        margin-right:5%;
+        margin-left:5%;
+      }
+}
