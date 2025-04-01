@@ -8,7 +8,7 @@ body {
 }
 
 header {
-	width: 95vw;
+	width: 96vw;
 	z-index: 5;
 	position:sticky;
 	.logo {
@@ -28,7 +28,7 @@ header {
 				transition: transform 200ms ease-in-out allow-discrete;
 				width: max(14vw, 140px);
 				rotate: -10deg;
-				margin: -8vw -2vw -2vw 0;
+				margin: -8vw -2vw 0 0;
 				filter: drop-shadow(#22333399 4px 12px 5px);
 			}
 			li:hover, li:focus-within {
@@ -45,9 +45,9 @@ header {
 			}
 			li:nth-child(4) { 
 				/* credits */
-				background: #fff;
 				text-align: center;
-				padding: 10vw 0 0;
+				padding: 0 0 0 2vw;
+				/* margin-right: -5vw; */
 				width: 10vw;
 				rotate: 0deg;		
 				font-size: 1.5vw;

@@ -1,0 +1,82 @@
+#featured-artwork {
+    display: inline-block;
+    margin: 0em auto 0em; 
+    width: 100%;
+    border: 0vw solid #edd;
+}
+
+.pin-1 {
+    position: relative;
+    width: 100%;
+}
+
+.pin-1 .paper {
+    position: relative;  /* Make this relative too */
+}
+
+.name-tag {
+    position: absolute;
+    width: fit-content;      /* Position from bottom of artwork */
+    right: 40px;
+    padding: 1em 2em;
+    transform: rotate(3deg);
+    z-index: 10;
+}
+
+.name-tag .pin-img {
+    position: absolute;
+    left: 50%;
+    top: -0.5em;
+    transform: translateX(-50%);
+}
+
+.name-tag h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+.name-tag .site-description {
+    font-family: "Lacquer", system-ui;
+    font-size: 16px;
+    color: #666;
+    margin-top: 0.2em;
+    font-style: italic;
+}
+
+.page-note {
+    flex: 3 2 300px;
+    margin: 2em;
+    transform-origin: center top;
+}
+
+.page-note h2 {
+    font-family: "Permanent Marker", cursive;
+    font-size: 24px;
+    margin-bottom: 1em;
+}
+
+.page-note p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 1em;
+}
+
+.page-note a {
+    font-family: "Lacquer", system-ui;
+    color: #333;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.2s;
+}
+
+.page-note a:hover {
+    color: #C81D25;
+}
+
+.showcase-note { transform: rotate(-2deg); }
+.tips-note { transform: rotate(1deg); }
+.featured-note { transform: rotate(-1deg); }
+
+main {
+    justify-content: center;
+}

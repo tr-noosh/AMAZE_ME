@@ -257,9 +257,9 @@
 }
 
 #drop-zone {
-    position: fixed;
-    bottom: 20px;  
-    right: 20px;
+    position: absolute;
+    top: 20px;         
+    left: 20px;         
     width: 200px;
     height: 200px;
     border: 3px dashed #fff;
