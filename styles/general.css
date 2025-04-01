@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lacquer&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lacquer&family=Permanent+Marker&display=swap');
 
 body {
 	/* background: linear-gradient(to left, #000, #261a00 10%, #261a00 90%, #000); */
@@ -109,7 +109,8 @@ main {
 	background-image: url("/images/assets/corkboard-texture.jpg");
 	border: min(2vw,24px) solid;
 	border-image: url('/images/wood.png') 32;
-	box-shadow: inset 2px 1px 8px 4px #30201099 ;
+	box-shadow: inset 2px 1px 8px 4px #30201099;
+	filter: drop-shadow(#332b2299 10px 10px 5px);
 }
 
 .paper {
