@@ -1,20 +1,20 @@
 .stone{
     animation-name: stoneV;
-    background-image: url("assets/rough-stone-texture.jpg");
+    background-image: url("/images/assets/rough-stone-texture.jpg");
     background-size: cover;
 }
 .wood{
     animation-name: woodV;
-    background-image: url("assets/wood-texture.jpg");
+    background-image: url("/images/assets/wood-texture.jpg");
     background-size: cover;
   }
 .plastic{
     animation-name: rubberV;
-    background-image: url("assets/plastic-texture.jpg");
+    background-image: url("/images/assets/plastic-texture.jpg");
 }
 .rubber{
     animation-name: slimeV;
-    background-image: url("assets/rubber-texture.jpg");
+    background-image: url("/images/assets/rubber-texture.jpg");
     background-size: cover;
 }
 @keyframes stoneV{

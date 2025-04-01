@@ -2,11 +2,11 @@
     --R1: #C81D25;
     --Y1: rgb(255, 244, 181);
     --B1: #37515F;
-    --tape: url("assets/tape-single.png");
-    --paper: url("assets/paper texture.jpg");
-    --pin: url("assets/push-pin-icon-14.png");
-    --frame: url("assets/woodframe.png");
-	--poster: url("assets/poster.jpg")
+    --tape: url("/images/assets/tape-single.png");
+    --paper: url("/images/assets/paper texture.jpg");
+    --pin: url("/images/assets/push-pin-icon-14.png");
+    --frame: url("/images/assets/woodframe.png");
+	--poster: url("/images/assets/poster.jpg")
 }
 
 h1{
@@ -62,19 +62,6 @@ button:active{
     border:solid #000000 4px;
     color: black;
 }
-body{
-    background-image: url("assets/magazine-texture.jpg");
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 16px;
-}
-main{
-    margin-right:20%;
-    margin-left:20%;
-    margin-top:0px;
-    margin-bottom:0px;
-    background-image: url("assets/corkboard-texture.jpg");
-    height:fit-content;
-}
 img#FrameExamples{
     object-fit: contain;
     height:100%;
@@ -99,7 +86,7 @@ button#ex{
    background-color: #010001;
     animation-duration: 2s;
 }
-@media (max-width:1500px) and (min-width:701px){
+/* @media (max-width:1500px) and (min-width:701px){
     main{
         margin-right:15%;
         margin-left:15%;
@@ -110,4 +97,4 @@ button#ex{
         margin-right:5%;
         margin-left:5%;
       }
-}
+} */

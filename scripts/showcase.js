@@ -28,7 +28,7 @@ var slide2 = new slide('2currentslide',21,'colouredframes',1)
         }
       }
            
-      let next= "slides/"+id.file+"/frame"+id.slideN+".png";
+      let next= "/images/slides/"+id.file+"/frame"+id.slideN+".png";
       //document.getElementById(Nid+'source').innerHTML= next;
       document.getElementById(id.name).src= next;
     }

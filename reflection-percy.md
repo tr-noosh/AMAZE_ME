@@ -1,0 +1,5 @@
+My name is Percy, and i worked on the artist showcase section, which was about me as well!
+
+For this project, i had the immense idea of doing a very interactive touch screen thing which involved dragging images around and putting them in boxes that could show a more detailed version of the artwork. It was pretty hard to imput, and i settled for something less. I dont feel any regret, as ive done the best i could.
+
+The adaptability stuff had been a pretty weak point for me i must admit. I am very satisfied with my version of the gallery though, so they balance out. This had provided me with great input on what direction i should take my portfolio going forward. I would like to thank my group members for accepting this selfish wish of mine, to take up a whole page just talking about myself and showing off my acheivements.
