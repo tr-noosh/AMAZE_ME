@@ -156,9 +156,6 @@ main {
 				width: 20vw;
 				margin-top: -12vw;
 			}
-			>li:nth-child(4) {
-				padding: 13vw 0 0;
-			}
 		}
 	}
 	main {
